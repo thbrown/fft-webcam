@@ -26,6 +26,17 @@ npm run dev
 
 Open the printed URL and grant webcam access.
 
+## Deploy (GitHub Pages)
+
+`npm run build` outputs the site to `docs/` with base path `/fft-webcam/`.
+GitHub Pages is served from that folder:
+
+> Repo **Settings → Pages → Build and deployment → Source: Deploy from a branch
+> → Branch: `main` / `/docs`**.
+
+Live at https://thbrown.github.io/fft-webcam/. Pages is HTTPS, so the webcam
+(which needs a secure context) works there. Rebuild and commit `docs/` to update.
+
 ## Per-frame pipeline
 
 1. Webcam frame → texture (downscaled/cropped to N×N, N a power of two)
