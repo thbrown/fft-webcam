@@ -4,6 +4,8 @@ A browser app that runs a **2D FFT on live webcam video on the GPU**, shows the
 frequency spectrum, lets you **paint a filter mask** onto the spectrum, and
 reconstructs the filtered video in real time via an inverse FFT.
 
+Live at: https://thbrown.github.io/fft-webcam/
+
 - **Pipeline:** all on the GPU (WebGL2). The only per-frame CPU↔GPU traffic is
   uploading the webcam frame as a texture.
 - **Processing:** grayscale / luma (one FFT).
